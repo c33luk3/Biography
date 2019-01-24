@@ -1,2 +1,2 @@
-# Welcome to my repository
-# This is my second webpage ive built with HTML and CSS
+# :rocket: Welcome to my repository. :rocket:
+# This is my second webpage I've built with HTML and CSS.
