@@ -1,7 +1,7 @@
 h1{
     font-size: 70px;
     font-style: italic;
-    background-color: aliceblue;
+    background-color: blue;
     border-style: solid;
     border-width: 5px;
     border-top-color:black;
@@ -15,9 +15,9 @@ h2{
     position: relative;
     font-style: italic;
     left: 5px;
-    padding: 140px;
-
-    }
+    padding-top: 50px;
+    padding-bottom: 180px;
+}
 h3{
     font-size: 25px;
     font-style: italic;
@@ -32,12 +32,13 @@ h3{
     padding: 30px;
 }
 body{
-    background-image: url(https://acctsearches.files.wordpress.com/2018/06/cncc_logo_art_red.png?w=1200);
+    background-image: url("https://acctsearches.files.wordpress.com/2018/06/cncc_logo_art_red.png?w=1200");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-color: azure;
     padding: 20px;
+
 }
 h4{
     font-size: 25px;
@@ -62,8 +63,8 @@ h5{
     border-left-color: black;
     border-right-color: black;
     border-bottom-color: black;
-    margin:60px;
-    padding: 15px;   
+    float: right;
+    border-top: 30px;
 }
 p{
     font-size: 50px;
@@ -74,11 +75,13 @@ p{
     border-left-color: black;
     border-right-color:black;
     border-bottom-color: black;
-    background-color: aliceblue;
+    background-color: blue;
     position: relative;
     padding-right: 1500px;
+    bottom: 430px;
     
 }
+    
 img{
     width: 75%;
     height: 75%;
@@ -112,5 +115,127 @@ img{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: antiquewhite;
+.dropdown:hover .dropbtn {background-color: greenyellow;
 }
+@keyframes slide {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    50% {
+      left: 50%;
+      top: 100px;
+    }
+    100% {
+      left: 100%;
+      top: 0;
+    }
+  }
+  .stage {
+    background: azure;
+    border-radius: 6px;
+    height: 55px;
+    position: relative;
+    min-width: 538px;
+  }
+  .stage:hover .ball {
+    animation: slide 3s linear;
+  }
+  .ball {
+    background: red;
+    border-radius: 50%;
+    height: 80px;
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-style: solid;
+    transition-property: border-radius;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+ }
+ .ball:hover{
+     background:plum;
+     border-radius: 50%;
+ }
+ .circle{
+    height: 480px;
+    width: 480px;
+    line-height: 20px;
+    border-radius: 25px;
+    background-color:red;
+    color:black;
+    text-align: center;
+    border-style: solid;
+    border-width: 6px;
+    font-weight: bold;
+    font-size: 25px;
+    transition-property: border-radius;
+    transition-duration: .2, 1s;
+    transition-timing-function: linear;
+    
+    }
+ .circle:hover{
+    background:greenyellow;
+    border-radius: 50%;    
+ }
+ .box{
+    width: 400px;
+    height: 300px;  
+    padding: 60px;
+    padding-bottom:50px;
+    border-style: solid;
+    border-width: 6px;
+    color: black;
+    background-color: blue;
+    font-weight: bold;
+    font-size: 25px;
+    float: right;
+    position: relative;
+    bottom: 430px;
+    transition-property:border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    }
+    .box:hover {
+        background: blueviolet;
+        border-radius: 50%;
+      }
+      div{
+          text-align: center;
+      }
+      @keyframes slide {
+        0% {
+          left: 30px;
+          top: 0;
+        }
+        50% {
+          left: 50%;
+          top: 100px;
+        }
+        100% {
+          left: 100%;
+          top: 0;
+        }
+    }
+      .circle {
+        position: relative;
+      }
+      .circle:hover .platform {
+        animation: slide 3s linear;
+      }
+      .platform {
+        background:blue;
+        border-style: solid;
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        transition-property: border-radius;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        position: absolute;
+    
+      }
+      
