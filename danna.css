@@ -37,7 +37,8 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-color: azure;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
 
 }
 h4{
@@ -59,12 +60,15 @@ h5{
     background-color: aliceblue;
     border-style: solid;
     border-width: 5px;
-    border-top-color: black;
+    border-top-color:black;
     border-left-color: black;
     border-right-color: black;
     border-bottom-color: black;
     float: right;
     border-top: 30px;
+    padding: 40px;
+    position: relative;
+   
 }
 p{
     font-size: 50px;
@@ -172,7 +176,6 @@ img{
     transition-property: border-radius;
     transition-duration: .2, 1s;
     transition-timing-function: linear;
-    
     }
  .circle:hover{
     background:greenyellow;
